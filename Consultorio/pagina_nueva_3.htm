@@ -1,0 +1,113 @@
+<html>
+
+<head>
+<meta http-equiv="Content-Language" content="es">
+<meta name="GENERATOR" content="Microsoft FrontPage 5.0">
+<meta name="ProgId" content="FrontPage.Editor.Document">
+<meta http-equiv="Content-Type" content="text/html; charset=windows-1252">
+<title>Artículos de JavaScript</title>
+
+<script> 
+function mOvr(src,clrOver) { 
+if (!src.contains(event.fromElement)) { 
+src.style.cursor = 'hand'; 
+src.bgColor = clrOver; 
+} 
+} 
+function mOut(src,clrIn) { 
+if (!src.contains(event.toElement)) { 
+src.style.cursor = 'default'; 
+src.bgColor = clrIn; 
+} 
+} 
+function mClk(src) { 
+if(event.srcElement.tagName=='TD'){ 
+src.children.tags('A')[0].click(); 
+} 
+} 
+</script>
+
+<script>
+
+function cambiar_color_over(celda){ 
+   celda.style.backgroundColor="#66ff33" 
+} 
+function cambiar_color_out(celda){ 
+   celda.style.backgroundColor="#dddddd" 
+} 
+
+</script>
+
+</head>
+
+<body>
+
+
+
+
+
+
+<p align="center">&nbsp;</p>
+<p align="center">&nbsp;</p>
+
+<table> 
+<tr> 
+<td onclick="mClk(this,'#729233');" onmouseout="mOut(this);" onmouseover="mOvr(this);" vAlign="center" width="171" style="border-bottom: 1px solid rgb(0,0,0); padding-left: 6; padding-top: 1; padding-bottom: 1" bgcolor="#475B70" height="12"><a style="COLOR: rgb(255,255,255); TEXT-DECORATION: none" ><font face="Verdana" size="1">Artículos de JavaScript</font></td> 
+</tr> 
+<tr> 
+<td onclick="mClk(this,'#729233');" onmouseout="mOut(this);" onmouseover="mOvr(this);" vAlign="center" width="171" style="border-bottom: 1px solid rgb(0,0,0); padding-left: 6; padding-top: 1; padding-bottom: 1" bgcolor="#475B70" height="1"><a style="COLOR: rgb(255,255,255); TEXT-DECORATION: none" ><font face="Verdana" size="1">Artículos de ASP</font></td> 
+</tr> 
+</table>
+
+
+<p align="center">&nbsp;</p>
+<div align="center">
+  <center>
+  <table border="1" cellpadding="0" cellspacing="0" style="border-collapse: collapse" bordercolor="#111111" width="50" height="50" background="images/diente.jpg">
+    <tr>
+      <td colspan="3" height="12" bgcolor="#FFFFFF"><font face="ADMUI3Sm">&nbsp;</font></td>
+    </tr>
+    <tr>
+      <td height="18"><font face="ADMUI3Sm">&nbsp;</font></td>
+      <td height="18"><font face="ADMUI3Sm">&nbsp;</font></td>
+      <td height="18"><font face="ADMUI3Sm">&nbsp;</font></td>
+    </tr>
+    <tr>
+      <td colspan="3" height="10"><font face="ADMUI3Sm">&nbsp;</font></td>
+    </tr>
+  </table>
+  </center>
+</div>
+
+
+<-- Codigo ofrecido por Tutores.org --> 
+<table border=0 cellpadding=0 cellspacing=0>
+<tr>
+<td onmouseover='this.style.background="#cc0000"' onmouseout='this.style.background="white"'>
+Este seria el texto dentro de una celda
+</td>
+</tr>
+</table>
+
+
+<p><span lang="es">
+
+<table width=100> 
+<tr> 
+   <td bgcolor="#dddddd" id="celda1" onmouseover="cambiar_color_over(this)" onmouseout="cambiar_color_out(this)">Casilla numero 1</td> 
+</tr> 
+<tr> 
+   <td bgcolor="#dddddd" id="celda2" onmouseover="cambiar_color_over(this)" onmouseout="cambiar_color_out(this)">Casilla numero 2</td> 
+</tr> 
+… 
+<tr> 
+   <td bgcolor="#dddddd" id="celda10" onmouseover="cambiar_color_over(this)" onmouseout="cambiar_color_out(this)">Casilla numero 10</td> 
+</tr> 
+</table> 
+
+</span></p>
+
+
+</body>
+
+</html>
